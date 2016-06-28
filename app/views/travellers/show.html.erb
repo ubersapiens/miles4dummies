@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @traveller.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @traveller.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @traveller.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @traveller.phone %>
+</p>
+
+<p>
+  <strong>Flying from:</strong>
+  <%= @traveller.flying_from %>
+</p>
+
+<p>
+  <strong>Flying to:</strong>
+  <%= @traveller.flying_to %>
+</p>
+
+<p>
+  <strong>Departure date:</strong>
+  <%= @traveller.departure_date %>
+</p>
+
+<p>
+  <strong>Return date:</strong>
+  <%= @traveller.return_date %>
+</p>
+
+<p>
+  <strong>Flexible:</strong>
+  <%= @traveller.flexible %>
+</p>
+
+<p>
+  <strong>Request type:</strong>
+  <%= @traveller.request_type %>
+</p>
+
+<p>
+  <strong>Mileage program:</strong>
+  <%= @traveller.mileage_program %>
+</p>
+
+<p>
+  <strong>Miles balance:</strong>
+  <%= @traveller.miles_balance %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @traveller.comments %>
+</p>
+
+<%= link_to 'Edit', edit_traveller_path(@traveller) %> |
+<%= link_to 'Back', travellers_path %>

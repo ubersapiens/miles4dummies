@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= content_for?(:title) ? yield(:title) : "Miles 4 Dummies" %></title>
+    <meta name="description" content="Miles 4 Dummies">
+    <meta name="name" content="Miles 4 Dummies">
+    <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true  %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
+    <%= favicon_link_tag %>
+    <link href="/assets/bootstrap.min.css" media="all" rel="stylesheet" />
+    <link href="/assets/bootstrap-theme.min.css" media="all" rel="stylesheet" />
+    <link href="/assets/custom.scss" media="all" rel="stylesheet" />
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.min.js"></script>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <%= render partial: "layouts/navigation" %>
+      <%= yield %> 
+    <%= render partial: "layouts/footer" %>     
+  </body>
+</html>

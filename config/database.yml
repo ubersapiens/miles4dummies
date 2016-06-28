@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: milesfordummies_development
+
+test:
+  <<: *default
+  database: milesfordummies_test
+
+staging:
+  <<: *default
+  database: milesfordummies_staging
+
+production:
+  <<: *default
+  database: milesfordummies_production

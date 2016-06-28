@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name_string: MyString
+  email: MyString
+  phone: MyString
+  flying_from: MyString
+  flying_to: MyString
+  departure_date: 2016-06-28
+  return_date: 2016-06-28
+  flexible: false
+  request_type: MyString
+  mileage_program: MyString
+  miles_balance: 1
+  comments: MyText
+
+two:
+  first_name: MyString
+  last_name_string: MyString
+  email: MyString
+  phone: MyString
+  flying_from: MyString
+  flying_to: MyString
+  departure_date: 2016-06-28
+  return_date: 2016-06-28
+  flexible: false
+  request_type: MyString
+  mileage_program: MyString
+  miles_balance: 1
+  comments: MyText

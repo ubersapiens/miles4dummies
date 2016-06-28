@@ -1,0 +1,180 @@
+/*!
+ * Customising Bootstrap
+ */
+
+//Navigation
+.navbar-static-top {
+  background: #c485cd;
+  
+  .navbar-right {
+    li a {
+      font-size: 16px;
+      margin-top:1em;
+      color:white;
+      text-shadow:none;
+    }
+  }
+}
+
+//Footer
+footer {
+  background: #c485cd;
+  color: white;
+
+  a {
+    color:white;
+    font-size: 16px;
+    &:visited {
+      color:white;
+    }
+  }
+
+  .unstyled {
+    list-style:none;
+    margin: 1em 0;
+  }
+
+  i {
+    padding: 0.3em;
+  }
+}
+
+//Buttons
+.btn-primary {
+  border: #c485cd;
+  background: #c485cd;
+}
+
+//Homepage
+p {
+  font-size: 16px;
+}
+
+.jumbotron {
+  background: #c485cd;
+  color:white;
+}
+
+#homepage-header {
+  background-image: url("/assets/homepage_header.jpg");
+  background-size: cover;
+  height: 500px;
+  background-position: 50% 20%;
+
+  .container {
+    margin-top:12em;
+  }
+}
+
+#homepage-features {
+  border: 3px solid white;
+  background: #c485cd;
+  color: white;
+  padding: 2em 1em 3em 1em;
+  
+}
+
+#homepage-services {
+  margin:2em 0;
+  h1 {
+    margin: 1em 0;
+  }
+
+  #homepage-services-bio {
+    margin: 0 0 2em 0;
+  }
+}
+
+#homepage-services-block {
+  border: 3px solid #c485cd;
+  color: black;
+  padding: 2em 1em 3em 1em;
+}
+
+#homepage-testimonials {
+  background: #c485cd;
+  color:white;
+  blockquote {
+    border: none;
+  }
+
+  a.left.carousel-control {
+    background: none;
+    text-shadow:none;
+    i {
+      color:white;
+    }
+  }
+
+  a.right.carousel-control {
+    background: none;
+    text-shadow:none;
+    i {
+      color:white;
+    }
+  }
+}
+
+#call-to-action {
+  margin: 2em 0;
+}
+
+#pricing-box {
+  border: 3px solid white;
+  background: #c485cd;
+  color: white;
+  padding: 2em 1em 3em 1em;
+}
+
+#question {
+  font-weight: bold;
+  font-size:20px;
+}
+
+th, tr, td {
+  padding: 1em;
+}
+
+
+//Sell 
+#sell-header {
+  background-image: url("/assets/sell_header.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+//Redeem 
+#redeem-header {
+  background-image: url("/assets/redeem_header.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+//About 
+#about-header {
+  background-image: url("/assets/about_header.jpg");
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+//FAQ 
+#faq-header {
+  background-image: url("/assets/about_header.jpg");
+  background-size: cover;
+  background-position: 50% 90%;
+}
+
+//Blog 
+#blog-header {
+  background-image: url("/assets/blog_header.jpg");
+  background-size: cover;
+  background-position: 50% 55%;
+}
+
+form.button_to {
+  text-align:center;
+}
+
+.header-form-button {
+  text-align: left;
+}
