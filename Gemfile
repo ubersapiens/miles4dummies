@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails', git: 'git://github.com/bokmann/font-awesome-rails'
 gem 'rails_12factor'
 gem 'monologue'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'

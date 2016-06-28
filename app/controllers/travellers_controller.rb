@@ -28,7 +28,7 @@ class TravellersController < ApplicationController
 
     respond_to do |format|
       if @traveller.save
-        format.html { redirect_to @traveller, notice: 'Traveller was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Traveller was successfully created.' }
         format.json { render :show, status: :created, location: @traveller }
       else
         format.html { render :new }
