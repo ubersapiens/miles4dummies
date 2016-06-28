@@ -56,7 +56,7 @@ p {
 }
 
 #homepage-header {
-  background-image: url("/assets/homepage_header.jpg");
+  background-image: image-url("/assets/homepage_header.jpg");
   background-size: cover;
   height: 500px;
   background-position: 50% 20%;
@@ -138,35 +138,35 @@ th, tr, td {
 
 //Sell 
 #sell-header {
-  background-image: url("/assets/sell_header.jpg");
+  background-image: image-url("/assets/sell_header.jpg");
   background-size: cover;
   background-position: 50% 60%;
 }
 
 //Redeem 
 #redeem-header {
-  background-image: url("/assets/redeem_header.jpg");
+  background-image: image-url("/assets/redeem_header.jpg");
   background-size: cover;
   background-position: 50% 60%;
 }
 
 //About 
 #about-header {
-  background-image: url("/assets/about_header.jpg");
+  background-image: image-url("/assets/about_header.jpg");
   background-size: cover;
   background-position: 50% 20%;
 }
 
 //FAQ 
 #faq-header {
-  background-image: url("/assets/about_header.jpg");
+  background-image: image-url("/assets/about_header.jpg");
   background-size: cover;
   background-position: 50% 90%;
 }
 
 //Blog 
 #blog-header {
-  background-image: url("/assets/blog_header.jpg");
+  background-image: image-url("/assets/blog_header.jpg");
   background-size: cover;
   background-position: 50% 55%;
 }
