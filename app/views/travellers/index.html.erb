@@ -1,51 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+       <div class="container">
+          <h1>List of Travellers</h1>
+       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p id="notice"><%= notice %></p>
+    <table>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<h1>Listing Travellers</h1>
+      <tbody>
+        <% @travellers.each do |traveller| %>
+          <tr>
+            <td><%= traveller.first_name %></td>
+            <td><%= traveller.last_name %></td>
+            <td><%= traveller.email %></td>
+            <td><%= link_to 'Show', traveller %></td>
+            <td><%= link_to 'Edit', edit_traveller_path(traveller) %></td>
+            <td><%= link_to 'Destroy', traveller, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Flying from</th>
-      <th>Flying to</th>
-      <th>Departure date</th>
-      <th>Return date</th>
-      <th>Flexible</th>
-      <th>Request type</th>
-      <th>Mileage program</th>
-      <th>Miles balance</th>
-      <th>Comments</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <br>
 
-  <tbody>
-    <% @travellers.each do |traveller| %>
-      <tr>
-        <td><%= traveller.first_name %></td>
-        <td><%= traveller.last_name %></td>
-        <td><%= traveller.email %></td>
-        <td><%= traveller.phone %></td>
-        <td><%= traveller.flying_from %></td>
-        <td><%= traveller.flying_to %></td>
-        <td><%= traveller.departure_date %></td>
-        <td><%= traveller.return_date %></td>
-        <td><%= traveller.flexible %></td>
-        <td><%= traveller.request_type %></td>
-        <td><%= traveller.mileage_program %></td>
-        <td><%= traveller.miles_balance %></td>
-        <td><%= traveller.comments %></td>
-        <td><%= link_to 'Show', traveller %></td>
-        <td><%= link_to 'Edit', edit_traveller_path(traveller) %></td>
-        <td><%= link_to 'Destroy', traveller, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Traveller', new_traveller_path %>
+    <%= link_to 'New Traveller', new_traveller_path %>
+    </div>
+  </div>
+</div>
